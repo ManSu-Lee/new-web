@@ -3,6 +3,7 @@
  <meta charset="utf-8">
  <title>Overseas football-html</title>
  <style>
+     
      #active{
          color:red;
      }
@@ -17,13 +18,33 @@
          font-size: 60px;
          text-align: center;
          border-bottom:1px solid black;
-         margin: 3px;
+         padding: 20px;
+         margin: 0px;
      }
-     
+     #grid ol{
+         border-right:1px solid black;
+         width:100px;
+         padding:20px;
+         margin:0px;
+         
+     }
+     #grid{
+         display:grid;
+         grid-template-columns:150px 1fr;
+            
+     }
+     #article{
+         padding-left: 10px;
+     }
+     body {
+         margin:0px;
+     }
  </style>
 </head>
 <body>
     <h1><a href="index.html"><font color="red">해외축구</font></a></h1>
+       <div id = "grid">
+<div>
 <ol>
  <li><a href="1.html"><h4>최신뉴스</h4></a></li>
     <li><a href="2.html"><h4>일정/결과</h4></a></li>
@@ -31,6 +52,8 @@
     <li><a href="4.html" class="saw"><h4>생생화보</h4></a></li>
     <li><a href="5.html" class="saw" id="active"><h4>기록/순위</h4></a></li>
 </ol>
+</div>
+
 <!--
 <ol>
  <li><a href="1.html"><h4><font color="red">최신뉴스</font></h4></a></li>
@@ -40,6 +63,7 @@
     <li><a href="5.html"><h4><font color="red">기록/순위</font></h4></a></li>
 </ol>
 -->
+<div id="article">
 <h2>‘28분 뛰고 1골’ 황희찬, 시즌 15골 19도움...커리어 하이</h2><br>
 
 <img src="황1.jpg" width="40%;">
@@ -62,4 +86,6 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ie6HaWhwzFY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <p><a href="http://naver.me/xitxsA2E" target="_blank" title="본 내용의 원문">url = http://naver.me/xitxsA2E</a></p>
+    </div>
+    </div>
 </body>
